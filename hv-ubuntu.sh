@@ -19,5 +19,12 @@ sudo sed -i 's/^#force_color_prompt=yes/force_color_prompt=yes/' /root/.bashrc
 # Uncomment and activate bash_completion block
 sudo sed -i '/^#if \[ -f \/etc\/bash_completion \] && ! shopt -oq posix; then/,+2 s/^#//' /root/.bashrc
 
+# Change the default editor to vim
+sudo update-alternatives --set editor /usr/bin/vim.basic
+
+# Set vim as the default for current user (root)
+echo "export EDITOR=vim" >> /root/.bashrc
+echo "export VISUAL=vim" >> /root/.bashrc
+
 # Reboot the system
 sudo shutdown -r now
