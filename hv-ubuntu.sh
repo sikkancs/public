@@ -4,7 +4,10 @@
 sudo timedatectl set-timezone Europe/Budapest
 
 # Update package list
-sudo apt update
+sudo apt update -y
+
+# Upgrade packages
+sudo apt upgrade -y
 
 # Install necessary packages
 sudo apt install -y linux-image-virtual linux-tools-virtual linux-cloud-tools-virtual
