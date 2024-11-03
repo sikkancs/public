@@ -2,6 +2,10 @@
 
 ## Example
 ```
+Host *
+	StrictHostKeyChecking no
+	PreferredAuthentications password,publickey
+
 Host Super-host
 	User root
 	HostName 192.168.0.2
