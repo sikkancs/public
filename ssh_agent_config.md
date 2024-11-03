@@ -1,5 +1,18 @@
 # SSH agent config 
 
+## Example
+```
+Host Super-host
+	User root
+	HostName 192.168.0.2
+	Port 22
+	IdentityFile ~/.ssh/pubkey.pub
+	IdentitiesOnly yes
+	StrictHostKeyChecking no
+	#!! GroupLabels Label1, Group1
+	#!! EnableDragFile Yes
+```
+
 ## Default agens ssh config
 
 ### Basic Host Configuration
